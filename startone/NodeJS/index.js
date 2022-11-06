@@ -17,19 +17,11 @@ async function f1(){
 
             })
             console.log("Successfully connect");
-            //var result = await connection.execute('select * from acc_accounting_event where acc_accounting_event_txn_id=456285');
-            
-// var result = await connection.execute('select * from acc_accounting_event');
+
 //console.log(result);
 console.log("got the data");
 }
 f1()
-// getrequest
-// app.get("/send",async function(req,res){
-//     console.log("coming here");
-//      var result = await connection.execute('select * from acc_accounting_event where acc_accounting_event_txn_id=456285'); 
-//     res.json(result);
-// })
 //postrequest
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 app.post('/senddata', urlencodedParser ,async function(req, res){
